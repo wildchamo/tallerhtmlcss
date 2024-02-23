@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Links Quimera</title>
-    <link rel="icon" href="./logoQuimera.png">
-    
+    <link rel="icon" href="./logoQuimera.png" />
+
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <img src="./logoQuimera.png"as alt="" />
+    <img src="./logoQuimera.png" as alt="" />
     <h1>@quimera.dev</h1>
     <section class="contendor-padre">
       <div class="contenedor-link">
@@ -51,8 +51,20 @@
       </div>
     </section>
 
+    <a href="tel:#464">Llamar al #464</a>
+    <a class="text-right underline" href="tel:6014010447">6014010447</a>
 
-<a href="tel:#464">Llamar al #464</a>
-<a class="text-right underline" href="tel:6014010447">6014010447</a>
+    <div id="llamarNumero"> llamar al 323</div>
+
+    <script>
+      // Obtén el elemento div por su ID
+      var divLlamarNumero = document.getElementById("llamarNumero");
+
+      // Agrega un evento de clic al div
+      divLlamarNumero.addEventListener("click", function () {
+        // Lógica para llamar al número
+        window.location.href = "tel:#323";
+      });
+    </script>
   </body>
 </html>
